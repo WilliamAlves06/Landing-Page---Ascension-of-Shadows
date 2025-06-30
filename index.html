@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+      padding: 0;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;        
+    }
+    footer{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+    }
+    .informacao{
+        position: absolute;
+        z-index:1;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+    }
+    .informacao h1{
+        font-weight: bold;
+        font-size: 8rem;
+        padding: 0;
+        margin: 0;
+    }
+      .informacao p{
+        font-weight: bold;
+        font-size: 180%;
+        padding-top: 2rem;
+        margin: 1rem;
+    }
+    .informacao button{
+        color: white;
+        background-color: red;
+        font: bold;
+        font-size: 1.2rem;
+        width: 12rem;
+        height: 3rem;
+        border-radius: 3rem;
+        border: none;
+        transition: background-color 0.3s ;
+    }
+
+      .informacao button:hover{
+        background-color: rgb(121, 1, 1);
+    }
+    .footer{
+        position: absolute;
+        z-index: 2;
+    }
+    
+    header{
+        background-color: #090909;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .sobre{
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .sobre h2{
+        font-size: 3rem;
+    }
+    .sobre p{
+        width: 80%;
+        padding: 6rem;
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+    }
+    .aba-galeria{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem;
+        font-size: 2rem;
+    }
+    .Galeria{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 7rem;
+        align-items: center;
+        padding: 3rem;
+    }
+    .item{
+        width: 30rem;
+    }
+    .rodape{
+        font-size: 17px;
+        color: white;
+        display: flex;
+        align-items: center;
+        margin: 2rem;
+        flex-direction: column;
+    }
+    .redes-sociais{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        color: white;
+        flex-direction: row;
+        gap:180px;
+        padding: 3rem;
+        font-size: 1.3rem;
+        
+    }
+    .redes-sociais a{
+        text-decoration: none;
+    }
+</style>
+
+
+<body>
+    <footer>
+        <div class="informacao">           
+            <h1>Ascension of Shadows</h1>
+            <p>prepare-se para a aventura mais epíca do ano</p>
+            <a href="*"><button>Pré-Venda</button></a>
+        </div>
+            <img class="imagem" src="img/foto 1.png" alt="" width="100%" >
+    </footer>
+    <header>
+        
+        <div class="sobre">
+            <h2>Sobre o Jogo</h2>
+            <p> 
+                Explore mundos incríveis, repletos de paisagens deslumbrantes, ruínas esquecidas 
+                e segredos ancestrais esperando para serem descobertos.
+                Enfrente inimigos lendários, de feras colossais a guerreiros imortais, em batalhas épicas que testarão
+                sua coragem, estratégia e habilidade.
+                Mergulhe em uma história envolvente, onde cada escolha molda seu destino, alianças podem se tornar 
+                traições e o futuro do reino depende das suas decisões.
+                A jornada começa agora. Você está pronto?
+            </p>
+        </div>
+
+        <section class="aba-galeria">
+            <h3> Galeria</h3>
+            <div class="Galeria">
+                <img class="item" src="img/foto 2.png" data-aos="flip-left" alt="">
+                <img class="item" src="img/foto 5.png" data-aos="fade-up" data-aos-delay="600" alt="">
+                <img class="item" src="img/foto3.png" data-aos="flip-left" alt="">     
+            </div>
+        </section>
+
+    <div class="rodape">
+        <p>© 2025 Ascension of Shadows, todos os direitos altorais reservados</p>
+
+        <div class="redes-sociais">
+            <a href="#" style="color: red;">Instagram</a>
+            <a href="#" style="color: red;">Twitter</a>
+            <a href="#" style="color: red;">YouTube</a>
+        </div>
+    </div>
+    </header>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</html>
